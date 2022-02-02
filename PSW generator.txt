@@ -1,0 +1,12 @@
+#generate a random password
+import random
+lower='abcdefghijklmnopqrstuvwxyz'
+upper='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+number='123456789'
+symbol='@#%^-*'
+
+all=lower + upper + number + symbol
+length=7
+
+password= ''.join(random.sample(all,length))
+print('Your password has been generated\n', password)
